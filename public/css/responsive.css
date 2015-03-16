@@ -3,10 +3,6 @@
 		width: 1120px;
 	}
 
-	#navbar ul.nav {
-		width: 582px;
-		padding-left: 70px;
-	}
 }
 
 @media (min-width: 768px){

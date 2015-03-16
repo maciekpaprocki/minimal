@@ -45,49 +45,39 @@ body {
 
 /* Navbar */
 
-.navbar-default {
-	background-color: #fff;
-	border: none;
-	border-radius: 0;
-	padding: 42px 0 28px 0;
+.nav.top-nav>li{
+   width:8.333333333%;
+   float:left;
+   text-align: center;
 }
-
-.navbar .navbar-brand {
-	text-transform: uppercase;
-	/*font: normal 28px "Jaapokki subtract";*/
-	font-weight: lighter;
+.nav.top-nav>.logo{
+   width:16.6666666%;
 }
-
-.navbar-default .navbar-top li {
-	list-style: none;
-	width: 150px;
-	text-align: center;
-	font: italic normal 16px "Playfair Display", Times, Serif;
+.nav.top-nav>.first,.nav.top-nav>.last{
+    font: italic normal 16px "Playfair Display", Times, Serif;
+    color: #181818;
 }
-
-.navbar-default .navbar-top li a{
-	color: #181818;
+.nav.top-nav>.first{
+    width:16.6666666%;
+    margin-left:8.3333333333%;
+   text-align:left;
 }
-
-.navbar-top .line {
-	width: 100%;
-	border-bottom: solid 1px #DDD;
-	height: 1px;
-	display: block;
-	margin: 8px 0 10px;
+.nav.top-nav>.last{
+    width:16.6666666%;
+    margin-right:8.3333333333%;
+    text-align:right;
 }
-
-#navbar {
-	margin-top: 12px;
-	margin-bottom: 10px;
+#navbar .nav.top-nav>.store-menu{
+    position:static;
 }
-
 #navbar li {
-	float: none;
-	display: inline;
-	position: relative;
+    position:relative;
 }
-
+#navbar li.last{
+    width:16.6666666%;
+    margin-right:8.3333333333%;
+    text-align:right;
+}
 #navbar li a {
 	display: inline;
 	text-transform: uppercase;
@@ -97,15 +87,8 @@ body {
 	letter-spacing: 1px;
 }
 
-#navbar li.spacer {
-	display: inline-block;
-	width: 135px;
-}
 
-#navbar ul.nav {
-	float: none;
-	margin: 0 auto;
-}
+
 
 #navbar.navbar-collapse.in li {
 	display: block;
@@ -125,10 +108,6 @@ body {
 
 #navbar.navbar-collapse.in ul.nav {
 	margin-top: 20px;
-}
-
-#navbar .store-menu{
-	position: inherit;
 }
 
 #navbar .store-menu:hover #store-dropdown{
@@ -173,7 +152,7 @@ body {
 	background-color: #222;
 	width: 100%;
 	z-index: 99;
-	top: 150px;
+	bottom:100%;
 	margin-top: 100px;
 	transition: all .3s ease-in-out;
 }
@@ -281,6 +260,3 @@ body {
 	margin-top: 18px;
 }
 
-.navbar-top .short-links{
-	margin-bottom: 5px;
-}
